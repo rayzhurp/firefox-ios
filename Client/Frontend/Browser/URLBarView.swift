@@ -637,11 +637,11 @@ private class CurveView: UIView {
 private class ToolbarTextField: AutocompleteTextField {
     override func textRectForBounds(bounds: CGRect) -> CGRect {
         let rect = super.textRectForBounds(bounds)
-        return rect.rectByInsetting(dx: 5, dy: 5)
+        return rect.rectByInsetting(dx: 10, dy: 5)
     }
 
     override func editingRectForBounds(bounds: CGRect) -> CGRect {
         let rect = super.editingRectForBounds(bounds)
-        return rect.rectByInsetting(dx: 5, dy: 5)
+        return rect.rectByInsetting(dx: 10, dy: 5)
     }
 }
